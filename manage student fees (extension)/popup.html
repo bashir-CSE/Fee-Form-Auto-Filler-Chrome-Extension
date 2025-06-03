@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 350px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    
+    .header {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .section h3 {
+      margin-top: 0;
+      color: #555;
+    }
+    
+    .form-group {
+      margin-bottom: 10px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    .control-button {
+      background-color: #2196F3;
+    }
+    
+    .control-button:hover {
+      background-color: #1976D2;
+    }
+    
+    .stop-button {
+      background-color: #f44336;
+    }
+    
+    .stop-button:hover {
+      background-color: #d32f2f;
+    }
+    
+    .status {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 3px;
+      text-align: center;
+    }
+    
+    .status.success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    
+    .status.error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    .status.info {
+      background-color: #d1ecf1;
+      color: #0c5460;
+      border: 1px solid #bee5eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Student Fee Manager</h2>
+  </div>
+
+  <div class="section">
+    <h3>Fee Values Configuration</h3>
+    <div class="form-group">
+      <label for="totalAmount">Total Amount:</label>
+      <input type="number" id="totalAmount" placeholder="Enter total amount">
+    </div>
+    
+    <div class="form-group">
+      <label for="discountAmount">Discount Amount:</label>
+      <input type="number" id="discountAmount" placeholder="Enter discount amount">
+    </div>
+    
+    <div class="form-group">
+      <label for="vatAmount">VAT Amount:</label>
+      <input type="number" id="vatAmount" placeholder="Enter VAT amount">
+    </div>
+    
+    <div class="form-group">
+      <label for="grandTotalAmount">Grand Total Amount:</label>
+      <input type="number" id="grandTotalAmount" placeholder="Enter grand total amount">
+    </div>
+    
+    <div class="form-group">
+      <label for="receivedAmount">Received Amount:</label>
+      <input type="number" id="receivedAmount" placeholder="Enter received amount">
+    </div>
+    
+    <button id="saveValues">Save Values</button>
+  </div>
+
+  <div class="section">
+    <h3>Automation Controls</h3>
+    <button id="startAutomation" class="control-button">Start Automation</button>
+    <button id="stopAutomation" class="stop-button">Stop Automation</button>
+    <button id="checkStatus" class="control-button">Check Status</button>
+  </div>
+
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
