@@ -1,4 +1,4 @@
-# Fee-Form-Auto-Filler-Chrome-Extension
+# manage student fees - Chrome-Extension for Aloha SDM
 A Chrome extension that automatically fills and submits fee update forms with predefined values.
 
 ## Features
